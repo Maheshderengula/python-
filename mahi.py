@@ -1,0 +1,13 @@
+a=15 #Decimal format(Base10)
+b=Ob1111 #Binary Format(Base 2)
+c=Oo17 #Octal Format (Base8)
+d=Oxf #HexaDecial format(Base 16)
+print(a)
+print(b)
+print(c)
+print(d)
+print("***Data Types***")
+print(type(a)) #<class,int>
+print(type(b))
+print(type(c))
+print(type(d))
