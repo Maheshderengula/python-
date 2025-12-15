@@ -1,12 +1,25 @@
-eid=101
-def wish():
-    print("gm")
-    
+#create -variables/fuction/class/object/module
 
-print(eid)
- 
-eid = 104
-print(eid)
+price=399
+brand=minlin
+brand-name="Men Full Sleeve Printed Sweatshirt"
+rating=3.9
 
-del eid
-print(eid)
+
+def login():
+    Print("login success")
+
+
+#rating
+Print(price)
+Print(brand)
+Print(product_name)
+Print(rating)
+
+
+
+
+
+
+login()
+login()
