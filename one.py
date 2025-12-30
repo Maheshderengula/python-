@@ -1,11 +1,43 @@
-a = 20
-b = 30
-c = 50
+#input  statement:
 
 
-a = int (input ("20:"))
-b = int (input ("30:"))
-c = int (input ("50:"))
 
-print ("min =",min(a,b,c))
-print ("max =",max(a,b,c))
+
+
+
+
+
+"""
+num = int (input())
+print(type(num))
+"""
+
+
+
+
+
+
+
+
+
+"""
+number = input ("give number:")
+number2 = int ( number)
+print(type(number2))
+"""
+
+
+
+
+
+
+
+
+
+"""
+
+name  = input("plese enter your name:")
+
+
+print(name)
+"""
