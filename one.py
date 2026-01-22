@@ -1,43 +1,24 @@
-#input  statement:
-
-
-
-
-
-
-
-
 """
-num = int (input())
-print(type(num))
+import csv 
+fp = open ('usere.csv','r')
+emp_csv =csv.reader(fp)
+emp_data = list(emp_csv)
+
+for emp in emp_data[1:]:
+    print(emp[1])
+
+fp.close()
 """
+import csv 
+employees=[
+            (101,'rahul','Male'),
+            (102,'Sonia','Female'),
+            (103,'Priya','Female')
+           ]
+fp=open('user.csv','w',newline="")
 
+csv_writer=csv.writer(fp)
+csv_writer.writerow(['uid','uname','gender'])#csv header
+csv_writer.writerows(employees)              #csv data
 
-
-
-
-
-
-
-
-"""
-number = input ("give number:")
-number2 = int ( number)
-print(type(number2))
-"""
-
-
-
-
-
-
-
-
-
-"""
-
-name  = input("plese enter your name:")
-
-
-print(name)
-"""
+print('New CSV File Created successfully')

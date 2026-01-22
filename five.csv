@@ -1,0 +1,8 @@
+employees = [
+    {"name":"Raju", "gender":"M"},
+    {"name":"Soniya", "gender":"F"}
+]
+
+for e in employees:
+    if e["gender"] == "M":
+        print(e["name"])
