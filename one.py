@@ -1,4 +1,4 @@
-a= int(input("Entre First Number:"))
-b= int(input("Entre second Number:"))
-print(a/b)
-print("GM")
+fp=open("data1.txt",'r')
+data=fp.read()
+print(data)
+print("welcome to Bangalore")
