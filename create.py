@@ -1,27 +1,13 @@
-import mysql.connector 
-dbcon=None 
-cursor=None 
+import pymongo
 try:
-    dbcon=mysql.connector.connect(host='localhost',
-                                  user='root',
-                                  password='root',
-                                  database='9am')
-    cursor=dbcon.cursor()
-    sql_st='''
-            create table employee(
-            eid int,
-            ename varchar(32) not null,
-            esal float,
-            gender varchar(32) not null,
-            primary key(eid)
-            );
-           '''
-    cursor.execute(sql_st)
-    print("New Table Created!")
-except mysql.connector.Error as err:
-    print(err)
-finally:
-    if cursor:
-        cursor.close()
-    if dbcon:
-        dbcon.close()
+    #establish db connection
+    client=pymongo.MongoClient('mongodb://localhost:27017/') 
+    #get db instance
+    db=client['mb']
+    #get collection instance
+    emp_col=db['employees']
+    emp_col.insert_one({'eid':102,'ename':'Sonia','esal':55000})
+    print("Document inserted successfully")
+
+except Exception as e:
+    print(e)
